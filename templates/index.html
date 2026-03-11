@@ -1,0 +1,10 @@
+<h1>VocalScan AI</h1>
+
+<form method="post" enctype="multipart/form-data">
+<input type="file" name="audio">
+<button type="submit">Analyze</button>
+</form>
+
+{% if result %}
+<p>Average Pitch: {{ result.average_pitch }}</p>
+{% endif %}
